@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center">
+        <div class="input-group d-flex justify-content-center">
+            <div style="width:48%;height:100%;border-top-left-radius:5px;border-bottom-left-radius:5px;font-family: 'Arial', Times, serif; background-image: linear-gradient(to top right,#1289A7,#12CBC4 );padding:5% 5%;">
+              <center><h3 style="font-family: Times New Roman, Times, serif;color:white;font-weight:bold;">Conversion <span class="bi bi-arrow-right-circle"></span></h3></center><br><br>
+              <form action="Prepaid_Postpaid" method="Post">
+                <label class="form-label" style="font-weight:bold; color:lightgrey;"><span class="bi bi-phone"></span> Mobile Number</label><br>
+                <span id="eMsg"></span>
+                <input type="tel" placeholder="+91" name="preno" class="form-control" id="txt" onkeyup="mobileVal()"><br><br>
+                <button type="submit" class="btn w-100 p-2" id="btn1">Convert Prepaid to Postpaid</button>
+              </form>
+             <pre>
+
+
+
+             </pre>
+            </div>
+
+            <div style="width:48%;height:100%;padding:5% 5%;background-image: linear-gradient(to top right,rgb(47, 144, 209),rgb(198, 3, 159));;font-family: 'Gill Sans', sans-serif;border-top-right-radius:5px;border-bottom-right-radius:5px;">
+              <form action="Postpaid_Prepaid" method="Post">
+                <center><h3 style="font-family: Times New Roman, Times, serif;color:white;font-weight:bold;"><span class="bi bi-arrow-left-circle"></span> Conversion</h3></center><br><br>
+                <label class="form-label" style="font-weight:bold; color:lightgrey"><span class="bi bi-phone"></span> Mobile Number</label><br>
+                 <span id="eMsg2"></span>
+                <input type="tel" placeholder="+91" name="postno" class="form-control"  id="txt2" onkeyup="mobileVal2()"><br><br>
+                <button type="submit" class="btn w-100 p-2" id="btn2">Convert Postpaid to Prepaid</button>
+              </form>
+              <pre>
+
+
+              
+              </pre>
+            </div>
+          </div>
+    </div>
+  </div>

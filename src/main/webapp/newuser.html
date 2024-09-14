@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mytel Signup Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" href="other/images/mm.jpg">
+    <link rel="stylesheet" href="other/register.css">
+    <script src="other/registerValidations.js"></script>
+   
+</head>
+<body>
+    <h2 class="slide">
+        <span style="--i:1;">W</span>
+        <span style="--i:2;">e</span>
+        <span style="--i:3;">l</span>
+        <span style="--i:4;">c</span>
+        <span style="--i:5;">o</span>
+        <span style="--i:6;">m</span>
+        <span style="--i:7;">e</span>
+        <span style="--i:8;margin-left: 1.5vw;">t</span>
+        <span style="--i:9;">o</span>
+        <span style="--i:10;margin-left: 1.5vw;">M</span>
+        <span style="--i:11;">y</span>
+        <span style="--i:12;">t</span>
+        <span style="--i:13;">e</span>
+        <span style="--i:14;">l</span>
+    </h2>
+    <div class="box">
+         <img src='other/images/usersignup.jpg'height='70'width='70' class="img-fluid d-block mx-auto" style="border-radius:50%;margin-top:-16%;">
+   <br><form action="newUser" method="post" >
+      <br>
+      <div class='d-flex justify-content-between'>
+         <div>
+          <div id="errorMsg1"></div>
+     <input class="form-control"  type="text" name="nm" onkeyup="fun1()" id="txt" required>
+        <label>Name <span class="bi bi-hand-thumbs-up"></span></label>
+      </div>
+      <div>
+          
+          <div id="errorMsg2"></div>
+          <input class="form-control" type="tel" name="mobno" onkeyup="mobileValidations()" id="mob" required>
+          <label>Mobile Number <span class="bi bi-telephone-outbound"></span></label>
+      </div>
+         </div>
+      
+     <div class='d-flex justify-content-between'>
+       <div>
+          <div id="errorMsg22"></div>
+          <input class="form-control"  type="email" name="mail" onkeyup="fun22()" id="txt22" required>
+          <label>Mail ID <span class="bi bi-envelope"></span></label>
+      </div>
+ 
+      <div>
+          <span id="errorMsg3"></span>
+        <input class="form-control" type="password" name="password" onkeyup="fun3()" id="txt3" title="Must contain atleast 1 number and 1 upper and lowercase letter, and atleast 6 or more Chars" required>
+          <label>Password <span class="bi bi-lock"></span></label>  
+        </div>
+     </div>
+     
+     <div>
+        <input class="upload-box form-control" type="file"  name="profile" required> 
+     </div>
+    
+     
+    <div>
+        <textarea class="form-control"  name="address" required></textarea>
+        <label>Address <span class="bi bi-geo-alt"></span></label>
+    </div><br><br>
+    
+ <button id="btnn1" type="submit">Register <span class="bi bi-box-arrow-right"></span></button>
+   <button id="btnn2"  onclick="window.location.href='index.html'"><span class="bi bi-box-arrow-left"></span> Back</button>
+       </form>
+    </div>
+    
+</body>
+</html>

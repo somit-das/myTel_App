@@ -1,0 +1,33 @@
+  <div class="d-flex justify-content-center">
+    <div style="width:75%;height:15%;padding:1% 2% 1% 1%;background-image: linear-gradient(to right,#1519a2,#00a8ff);display:flex;">
+  <div class="d-flex justify-content-center">
+   <center>
+    <div>
+      <span class="bi bi-truck" style="color:white;font-size:400%;"></span>
+      <h3 class="text-white">Welcome</h3>
+      <p class="text-white">You are just few seconds away from completing your Order!</p><br><br>
+      <form action="Sim_Conversion"><button id="button1">Go Back</button></form>
+     </div>
+   </center>
+  </div>
+    <div style="width:100%;height:100%;padding:5% 5%;font-family: 'Gill Sans', sans-serif;border-top-right-radius:3px;border-bottom-right-radius:3px;border-top-left-radius:100px;border-bottom-left-radius:100px;background-color:white;">
+      <form action="ConversionSuccess" method="post">
+        <h4 class="text-center" style="font-weight:bold;color:rgb(159, 159, 159);">Sim Delivery Details</h4><br>
+        <div class="d-flex">
+          <input type="text" placeholder="First name" class="form-control m-2" name="fnm">
+          <input type="text" placeholder="Last name" class="form-control m-2" name="lnm">
+        </div>
+        <div class="d-flex">
+          <input type="text" placeholder="City" class="form-control m-2" name="city">
+          <input type="text" placeholder="Zip" class="form-control m-2" name="zip">
+        </div>
+        <div class="d-flex">
+          <input type="text" placeholder="Address" class="form-control m-2" name="address">
+          <input type="email" placeholder="Email" class="form-control m-2" name="gmail">
+        </div><br>
+        <button id="button2" onclick="backk()">Place Order</button>
+      </form>
+      <br>
+    </div>
+  </div>
+</div>

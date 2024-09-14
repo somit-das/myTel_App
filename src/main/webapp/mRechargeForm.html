@@ -1,0 +1,61 @@
+<div style="width:77%;height:15%;background-image: linear-gradient(to top right,rgb(3, 198, 107),rgb(47, 144, 209));padding:55px 55px 40px 55px;margin-left:10%;">
+    <div class="d-flex justify-content-center" style="box-shadow:0 0 20px black;" >
+        <div class="input-group">
+            <div style="font-family: 'Arial', Times, serif;width:50%;height:100%;border-top-left-radius:5px;border-bottom-left-radius:5px;background-image: linear-gradient(to top right,rgb(47, 144, 209),rgb(198, 3, 159));padding:25px 10px;">
+          
+            <h4 style="color:orange;text-align:center;font-weight:bold;">ONE WALLET</h4>
+            <h2 style="color:orange;text-align:center;font-weight:bold; margin-top:-3%;">ALL RECHARGE</h2>
+            <ul class="text-white d-flex" style="font-weight:bold;">
+            <li>99%  Success</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li>Best Commission</li>
+            </ul>
+            <img class="img-fluid" src="other/images/recharge2.png"><br>
+            <div class="text-white text-center" style="font-family: 'Times New Roman', Times, serif;"><br>
+            <h3 style="font-weight:bold;">Join Today</h3>
+                <hr>
+                <h4 style="font-weight:bold;">Start Recharge Business</h4>
+            </div>
+
+            </div>
+            <div style="width:50%;height:100%;padding:30px;background-image: linear-gradient(to top right,rgb(240, 253, 255),rgb(215, 215, 239));font-family: 'Gill Sans', sans-serif;border-top-right-radius:5px;border-bottom-right-radius:5px;">
+                    <form action="viewPlans">
+                <span class="bi bi-phone d-flex justify-content-center" style="font-size:30px;color:rgb(7, 162, 213)"></span>
+                <h4 style="color:rgb(7, 162, 213);text-align:center;font-weight:bold;font-family: 'Times New Roman', Times, serif;">Phone Recharge</h4>
+                 <br> <div class="d-flex justify-content-center">
+                 Prepaid &nbsp;<div class="form-switch">
+                    <input type="checkbox" class="form-check-input" name="type" value="Postpaid">
+                 </div> Postpaid</div><br>
+                 <span id="errorMsg"></span>
+                 <input type="text" onkeyup="chkValidation()" class="form-control" id="num" name="phno" placeholder="Enter Phone Number" style="border:none;background-image: linear-gradient(to top right,rgb(240, 253, 255),rgb(215, 215, 239));border-bottom:2px solid lightgrey;" required><br>
+                  <select name="slct" id="abc" class="form-select"><br>
+                        <option>Select Operator</option>
+                        <option value="Jio">Jio</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="VI">VI</option>
+                    <option value="BSNL">BSNL</option>
+                  </select><br>
+                  <a href="#" style="text-decoration:none;color:rgb(7, 162, 213);">Have Promocode?</a>
+                  <hr style="margin-top:-1px;"><br>
+                  <button type="submit" class="btn w-100" style="color:white;background-image:linear-gradient(to bottom right,blue,rgb(81, 86, 236),rgb(12, 191, 250));">View All Plans</button><br><br><br>      
+                 </form>
+                 </div>
+           <script>
+ function chkValidation(){  
+  var num=document.getElementById("num").value; 
+if (isNaN(num)){  
+  document.getElementById("errorMsg").innerHTML="Enter Numeric Value Only".fontcolor('red');   
+}
+else if(num.length==10){  
+	document.getElementById("errorMsg").innerHTML="";
+  }  
+  else{
+	document.getElementById("errorMsg").innerHTML="Enter A Valid Mobile Number".fontcolor('red');
+}
+}
+ function backk(){
+	 window.location.href='Mainpage.html';
+ }
+           </script>
+    </div>
+    </div>
+    </div>
